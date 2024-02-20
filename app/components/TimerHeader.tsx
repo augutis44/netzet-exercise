@@ -37,7 +37,7 @@ const TimerHeader = () => {
 
 
     return (
-        <div className="flex gap-[7px]">
+        <div className="flex gap-[5px] lg:gap-[7px]">
             <TimerHeaderBackground time={days} timeType="Days" />
             <TimerHeaderBackground time={hours} timeType="Hours" />
             <TimerHeaderBackground time={minutes} timeType="Minutes" />
