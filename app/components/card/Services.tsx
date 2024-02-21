@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { montserrat } from '@/page';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+    weight: ['700', '500'],
+    subsets: ['latin'],
+  })
 
 const cardList: string[] = [
     'Exclusive parenting resources',

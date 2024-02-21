@@ -1,8 +1,13 @@
+import { Inter } from 'next/font/google';
 import Image from 'next/image';
-import { inter } from '@/page';
 import JoinNowButton from '@/components/card/actions/JoinNowButton';
 import NoThankYouButton from '@/components/card/actions/NoThankYouButton';
 import PayMethods from '@/components/card/actions/PayMethods';
+
+const inter = Inter({
+    weight: ['400'],
+    subsets: ['latin'],
+})
 
 const CardActions = () => {
     return (
