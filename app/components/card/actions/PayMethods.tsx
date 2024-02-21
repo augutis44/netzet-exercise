@@ -45,9 +45,9 @@ const PayMethods = () => {
     return (
         <div className='flex items-center justify-around md:justify-center flex-wrap gap-[6px] md:gap-[31px] w-full'>
             <PayPal />
-            {payMethods.map((payMethod, i) =>
+            {/* {payMethods.map((payMethod, i) =>
                 <Image src={payMethod.imageUrl} alt={payMethod.alt} key={i} width={payMethod.width} height={payMethod.height} />
-            )}
+            )} */}
         </div>
     )
 }
