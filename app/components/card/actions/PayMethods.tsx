@@ -1,3 +1,4 @@
+import PayPal from "@/components/icons/PayPal";
 import Image from "next/image";
 
 interface PayMethodsProps {
@@ -8,12 +9,6 @@ interface PayMethodsProps {
 }
 
 const payMethods: PayMethodsProps[] = [
-    {
-        imageUrl: '/PayPal.svg',
-        alt: 'PayPal',
-        width: 65,
-        height: 16
-    },
     {
         imageUrl: '/Visa.svg',
         alt: 'Visa',
@@ -48,7 +43,8 @@ const payMethods: PayMethodsProps[] = [
 
 const PayMethods = () => {
     return (
-        <div className='flex justify-around md:justify-center flex-wrap gap-[6px] md:gap-[31px] w-full'>
+        <div className='flex items-center justify-around md:justify-center flex-wrap gap-[6px] md:gap-[31px] w-full'>
+            <PayPal />
             {payMethods.map((payMethod, i) =>
                 <Image src={payMethod.imageUrl} alt={payMethod.alt} key={i} width={payMethod.width} height={payMethod.height} />
             )}

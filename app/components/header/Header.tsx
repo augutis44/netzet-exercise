@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AcceptChallengeButton from "@/components/header/AcceptChallengeButton";
 import Timer from "@/components/header/timer/Timer";
+import PhoneIcon from "@/components/icons/PhoneIcon";
 
 const Header = () => {
     return (
@@ -22,7 +23,7 @@ const Header = () => {
                 </div>
 
                 <div className="hidden md:flex text-white font-bold text-[18px] items-center gap-[11px] ">
-                    <Image src="/PhoneIcon.svg" alt="phone Icon" width={16} height={16} />
+                    <PhoneIcon />
                     <p>1 (302) 316-5995</p>
                 </div>
             </header>
