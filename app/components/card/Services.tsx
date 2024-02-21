@@ -17,7 +17,7 @@ const cardList: string[] = [
 
 const CardServices = () => {
     return (
-        <div className='bg-[#FFFCF5] rounded-[10px] flex flex-col-reverse md:flex-row gap-[17px] items-center md:items-start px-[16px] py-[21px] md:p-[16px] mx-[18.5px] mt-[28px] mb-[27px] md:m-0'>
+        <div className='bg-[#FFFCF5] rounded-[10px] flex flex-col-reverse md:flex-row gap-[17px] items-center px-[16px] py-[21px] md:p-[16px] mx-[18.5px] mt-[28px] mb-[27px] md:m-0'>
             <div className='flex items-center flex-col gap-[18px] md:gap-[38px] md:py-[10px] md:pr-[21px] md:pl-[29px] max-w-[364px]'>
                 <div className='flex flex-col gap-[15px]'>
                     {cardList.map((item, i) =>
