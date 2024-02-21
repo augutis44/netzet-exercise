@@ -1,5 +1,4 @@
-import React from 'react'
-import { inter } from '../page'
+import { inter } from '@/page';
 
 interface TimerHeaderBackgroundProps {
     time: number,
@@ -17,4 +16,4 @@ const TimerHeaderBackground = ({ time, timeType }: TimerHeaderBackgroundProps) =
     )
 }
 
-export default TimerHeaderBackground
+export default TimerHeaderBackground;
