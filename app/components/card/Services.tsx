@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Montserrat } from 'next/font/google';
+import CheckMark from "@/components/icons/CheckMark";
 
 const montserrat = Montserrat({
     weight: ['700', '500'],
     subsets: ['latin'],
-  })
+})
 
 const cardList: string[] = [
     'Exclusive parenting resources',
@@ -21,7 +22,7 @@ const CardServices = () => {
                 <div className='flex flex-col gap-[15px]'>
                     {cardList.map((item, i) =>
                         <div key={i} className='flex items-center gap-[12.5px] md:gap-[15px]'>
-                            <Image src="/CheckMark.svg" alt="Check Mark" width={25} height={25} />
+                            <CheckMark />
                             <p className='font-[600] text-[20px] md:text-[23px] leading-[24.58px] md:leading-[28.27px]'>{item}</p>
                         </div>
                     )}
